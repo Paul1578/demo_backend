@@ -11,5 +11,7 @@ RUN npm install -g @nestjs/cli
 # Copy local code to the container image.
 COPY . .
 
+EXPOSE 3000
+
 # Run the web service on container startup.
 CMD ["npm", "run", "start:dev"]
